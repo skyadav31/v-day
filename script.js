@@ -71,6 +71,7 @@ function handleYesClick() {
         const msg = yesTeasePokes[Math.min(yesTeasedCount, yesTeasePokes.length - 1)]
         yesTeasedCount++
         showTeaseMessage(msg)
+        music.pause()
         return
     }
     window.location.href = 'yes.html'
